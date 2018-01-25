@@ -1,12 +1,20 @@
-<head>
-	<title>shader-box-gradient preview</title>
-</head>
-<body style = "margin:0px; padding:0px;">
-  <canvas id="canvas_element" style="width: 100%;height:100%;background:red;"></canvas>
-  <div style="left:0;top:0;position: absolute;width: 100%;height:100%;display:flex;align-items: center;justify-content: center;">
-  	<h1 style="font-size:100px;color:rgba(0,0,0,0.1);">fancy.</h1>
-  </div>
-</body>
+<style>
+	#canvas{
+		width: 100%;
+		height: 100%;
+	}
+	body{
+		padding: 0;
+		margin: 0;
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+	}
+</style>
+<canvas id="canvas_element" style="width: 100%;height:100%;background:red;"></canvas>
+<div style="left:0;top:0;position: absolute;width: 100%;height:100%;display:flex;align-items: center;justify-content: center;">
+<h1 style="font-size:100px;color:rgba(0,0,0,0.1);">fancy.</h1>
+</div>
 <script src = './index.js'></script>
 <script>
 	var gradient = window.ShaderBoxGradient(window.canvas_element,{seed:[0.4,1.415,5.3123],speed:1.0,fade:1.0})
