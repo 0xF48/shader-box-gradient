@@ -1,0 +1,22 @@
+{
+  "name": "shader-box-gradient",
+  "version": "1.0.0",
+  "description": "that simple plug-n-play webgl wave gradient background you were looking for.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --progress --watch --config build.conf.js",
+    "build": "webpack --config build.conf.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "shader-box": "^1.1.1"
+  },
+  "devDependencies": {
+    "coffee-loader": "^0.9.0",
+    "coffeescript": "^2.1.1",
+    "glsl-template-loader": "^1.1.0",
+    "webpack": "^3.10.0"
+  }
+}
