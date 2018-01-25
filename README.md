@@ -1,4 +1,5 @@
 # ShaderBox - Gradient
+[![npm][npm]][npm-url]
 
 That simple plug-n-play webgl wave gradient background you were looking for.
 
@@ -19,3 +20,6 @@ gradient.run()
 gradient.pause()
 
 ```
+
+[npm]: https://img.shields.io/npm/v/shader-box-gradient.svg?style=flat-square
+[npm-url]: https://npmjs.com/shader-box-gradient
