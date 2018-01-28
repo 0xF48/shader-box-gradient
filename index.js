@@ -510,7 +510,7 @@ module.exports=opts=>"attribute vec2 a_position;\nattribute vec2 a_texture;\nuni
 /* 2 */
 /***/ (function(module, exports) {
 
-module.exports=opts=>"precision lowp float;\nuniform float iTime;\nuniform vec3 seed;\nuniform float fade;\nuniform float speed;\nvarying vec2 v_uv;\nvoid main() {\n\tfloat t = iTime * speed;\n\tvec3 c = vec3(0.69 - (sin(((seed.x + (t / 3e3)) + v_uv.y) + v_uv.x) * 0.3), 0.713 - (cos(((seed.y + (t / 3e3)) + v_uv.y) + v_uv.x) * 0.3), 0.72 + (sin(((seed.z + (t / 3e3)) + v_uv.y) + v_uv.x) * 0.3));\n\tc += (fade * pow(v_uv.y * 1.2, 2.0));\n\tgl_FragColor = vec4(c, 1.0);\n}\n";
+module.exports=opts=>"precision lowp float;\nuniform float iTime;\nuniform vec3 seed;\nuniform float fade;\nuniform float speed;\nvarying vec2 v_uv;\nvoid main() {\n\tfloat t = iTime * speed;\n\tvec3 c = vec3(0.69 - (sin(((seed.x + (t / 3e3)) + v_uv.y) + v_uv.x) * 0.3), 0.713 - (cos(((seed.y + (t / 3e3)) + v_uv.y) + v_uv.x) * 0.3), 0.72 + (sin(((seed.z + (t / 3e3)) + v_uv.y) + v_uv.x) * 0.3));\n\tc += (fade * v_uv.y);\n\tgl_FragColor = vec4(c, 1.0);\n}\n";
 
 /***/ })
 /******/ ]);
